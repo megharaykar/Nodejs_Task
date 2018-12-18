@@ -33,6 +33,8 @@ npm install
 ```
 node server.js
 ```
+The Application runs on port 3000
+
 Below are the APIs being implemented:
 
 * GET: /api/users/ - method to return all the data given in the sample.json file
