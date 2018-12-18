@@ -35,10 +35,20 @@ node app.js
 ```
 The Application runs on port 3000
 
-Below are the APIs being implemented:
+Below are the details of the API implemented:
 
-* GET: /api/users/ - method to return all the data given in the sample.json file
-* POST: /api/manipulate/ - method to return the data upon manipulating the user input by applying Filter/Sorting/Pagination
+GET: /api/users/ - method to return all the data given in the sample.json file
+* If the user reaches this endpoint without any body, it returns the entire contents of the sample.json
+* Filter/Pagination/Sorting : The body can contain either zero or any combination of filter, pagination or sorting. Based on the input provided by the user in the body, it returns the results. The input should be in the json with the specified format below.
+
+Example : 
+
+1.{
+   "filter":[{"field":"age" : "21"}],
+   "pagination":[{"size":10, "page_number": 9}],
+   "sort":[{"first_name" : "asc"}]
+  }
+
 
 This application has to be triggered from the command line with CURL or with browser or with applications like Postman.
 
