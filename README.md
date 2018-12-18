@@ -56,17 +56,17 @@ Input: With Body (an example as shown below)
 "filter":[
    {"field": "age", "operator": "EQUALS", "value": 21}
    ],
- "pagination" : {
-	"size" : 5,
-	"page_number" : 1
-	},
  "sort":[
 	{"first_name": "asc"}
-  ]
+  ],
+  "pagination" : {
+	"size" : 5,
+	"page_number" : 1
+  }
 }
 
 Output: 
-The above example input filters all those values with age equal to 21, then the pagination of size 5 and page_number 1 is applied, and then the output is sorted in ascending order of first_name.
+The above example input filters all those values with age equal to 21, then it is sorted in ascending order of first_name and then the pagination of size 5 and page_number 1 is applied.
 
 This application has to be triggered from the command line with CURL or with browser or with applications like Postman.
 
