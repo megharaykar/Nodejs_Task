@@ -37,7 +37,7 @@ The Application runs on port 3000
 
 Below are the details of the API implemented:
 
-GET: /api/users/ - method to return all the data given in the sample.json file
+GET: /api/users/ - method to return all the data given in the sample.json file (The reason for using GET method is that, all the functionalities are applied on the json data and we are only retrieving data from json file)
 * If the user reaches this endpoint without any body, it returns the entire contents of the sample.json
 * Filter/Pagination/Sorting : The body can contain either zero or any combination of filter, pagination or sorting. Based on the input provided by the user in the body, it returns the results. The input should be in the json with the specified format below.
 
