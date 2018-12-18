@@ -65,6 +65,8 @@ Input: With Body (an example as shown below)
   }
 }
 
+POST: /api/users/ - method to add a new record to the json file
+
 Output: 
 The above example input filters all those values with age equal to 21, then it is sorted in ascending order of first_name and then the pagination of size 5 and page_number 1 is applied.
 
