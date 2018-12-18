@@ -41,15 +41,17 @@ GET: /api/users/ - method to return all the data given in the sample.json file (
 * If the user reaches this endpoint without any body, it returns the entire contents of the sample.json
 * Filter/Pagination/Sorting : The body can contain either zero or any combination of filter, pagination or sorting. Based on the input provided by the user in the body, it returns the results. The input should be in the json with the specified format below.
 
-Scenario1 :
+## Scenario1 :
 Input: With No Body
        localhost:3000/api/users/ 
        
-Output: Returns the entire json contents
+Output: 
+Returns the entire json contents
 
-Scenario2:
+## Scenario2:
 Input: With Body (an example as shown below)
-
+          localhost:3000/api/users/
+       
 {
 "filter":[
    {"field": "age", "operator": "EQUALS", "value": 21}
@@ -63,7 +65,8 @@ Input: With Body (an example as shown below)
   ]
 }
 
-Output: The above example input filters all those values with age equal to 21, then the pagination of size 5 and page_number 1 is applied, and then the output is sorted in ascending order of first_name.
+Output: 
+The above example input filters all those values with age equal to 21, then the pagination of size 5 and page_number 1 is applied, and then the output is sorted in ascending order of first_name.
 
 This application has to be triggered from the command line with CURL or with browser or with applications like Postman.
 
