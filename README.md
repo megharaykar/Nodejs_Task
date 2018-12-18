@@ -43,11 +43,19 @@ GET: /api/users/ - method to return all the data given in the sample.json file
 
 Example : 
 
-1.{
-   "filter":[{"field":"age" : "21"}],
-   "pagination":[{"size":10, "page_number": 9}],
-   "sort":[{"first_name" : "asc"}]
-  }
+{
+"filter":[
+   {"field": "age", "operator": "EQUALS", "value": 21}
+   ],
+ "pagination" : {
+	"size" : 5,
+	"page_number" : 1
+	},
+ "sort":[
+	{"first_name": "asc"}
+  ]
+
+}
 
 
 This application has to be triggered from the command line with CURL or with browser or with applications like Postman.
