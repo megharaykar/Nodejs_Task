@@ -28,7 +28,7 @@ npm init
 ```
 npm install
 ```
-* start the node server:
+* Start the node server:
 
 ```
 node server.js
