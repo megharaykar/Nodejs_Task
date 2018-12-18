@@ -54,13 +54,11 @@ Example :
  "sort":[
 	{"first_name": "asc"}
   ]
-
 }
 
+The above example input filters all those values with age equal to 21, then the pagination of size 5 and page_number 1 is applied, and then the output is sorted in ascending order of first_name.
 
 This application has to be triggered from the command line with CURL or with browser or with applications like Postman.
-
-Below I have included the examples of APIs implemented:
 
 
 
