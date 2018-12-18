@@ -31,7 +31,7 @@ npm install
 * Start the node server:
 
 ```
-node server.js
+node app.js
 ```
 The Application runs on port 3000
 
