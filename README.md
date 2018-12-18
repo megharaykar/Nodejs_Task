@@ -3,6 +3,7 @@ A Node.js application to process Json data
 
 This Application demonstrates dealing with large data from json file. Performing various functionalities like Filtering, Sorting and service side pagination.
 
+You can access the app at ec2-34-215-174-107.us-west-2.compute.amazonaws.com/api/users
 ## Run the app locally
 
 ## Requirements
